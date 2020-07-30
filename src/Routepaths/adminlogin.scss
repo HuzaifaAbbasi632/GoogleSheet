@@ -1,0 +1,205 @@
+.SignIn-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .image-container{
+        width: 50%;
+        height: inherit;
+        background-color: #232f3e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .logo-image{
+            display: flex;
+            align-items: center;
+            background-color: inherit;
+            opacity: 1.0;
+        }
+        .logo-text{
+            width: 50%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f3a847;
+            opacity: 0.7;
+        }
+        .title{
+            height: 26px;
+            width: 48%;
+        }
+    }
+    .credentials-container{
+        width: 50%;
+        background-color: white;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .signIn-text{
+            font-size: 34px;
+            letter-spacing: 2px;
+            color: #050505;
+        }
+        .credentials-description{
+            font-size: 16px;
+            width: 316px;
+        }
+        .inputs-container{
+            width: 48%;
+            height: 142px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .username-container{
+                .email-label{
+                font-size: 11px;
+                color: #050505;
+                position: relative;
+                left: 8px;
+                font-weight: bold;
+                }
+                .ant-input{
+                border: 1px solid #E3E8F0;
+                padding-left: 50px;
+                font-size: 14px;
+                color: #050505;
+                height: 40px;
+                }
+                .icon-Icon-Mail{
+                    position: relative;
+                    top: -29px;
+                    padding: 9px 8px;
+                    color: #050505;
+                }
+            }
+            .username-error-container{
+                .email-label{
+                    font-size: 11px;
+                    color: red;
+                    position: relative;
+                    left: 8px;
+                    }
+                    .ant-input{
+                    border: 1px solid red;
+                    padding-left: 50px;
+                    font-size: 14px;
+                    height: 40px;
+                    }
+                    .icon-Icon-Mail{
+                        position: relative;
+                        top: -29px;
+                        padding: 9px 8px;
+                        color: red !important;
+                    }
+                    .icon-Icon-Lock-close{
+                        position: relative;
+                        left: 5px;
+                        top: -29px;
+                        color: red;
+                        padding: 9px 8px;
+                    }
+                    .icon-check_circle{
+                        position: relative;
+                        left: 5px;
+                        top: -29px;
+                        color: red;
+                        padding: 9px 8px;
+                    }
+            }
+            .password-container{
+                .password-label{
+                font-size: 11px;
+                position: relative;
+                left: 8px;
+                color: #050505;
+                font-weight: bold;
+                }
+                .ant-input{
+                border: 1px solid #E3E8F0;
+                padding-left: 50px;
+                font-size: 24px;
+                color: #050505;
+                height: 40px;
+                &::placeholder{
+                    position: relative;
+                    font-size: 14px;
+                    bottom: 3px;
+                }
+                }
+            }
+            .icon-Icon-Lock-close{
+                position: relative;
+                left: 5px;
+                top: -29px;
+                color: #050505;
+                padding: 9px 8px;
+            }
+            .icon-check_circle{
+                position: relative;
+                left: 5px;
+                top: -29px;
+                color: #050505;
+                padding: 9px 8px;
+            }
+            .password-error-container{
+                .password-label{
+                font-size: 11px;
+                color: red;
+                position: relative;
+                left: 8px;
+                }
+                .ant-input{
+                border: 1px solid red;
+                padding-left: 50px;
+                font-size: 14px;
+                height: 40px;
+                }
+                .icon-Icon-Lock-close:before{
+                    color:red
+                }
+                .icon-check_circle::before{
+                    color: red;
+                }
+            }
+        }
+        .checkbox{
+            width: 48%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 5px;
+            .remember{
+                position: relative;
+                left: 10px;
+                font-size: 15px;
+                color: #929BAB;
+            }
+            a{
+                position: relative;
+                top: -5px;
+                font-size: 15px;
+                color: #929BAB;
+            }
+        }
+        .SignIn-button{
+            width: 48%;
+            height: 45px;
+            background-color: #f3a847;
+            color: white;
+            border-radius: 50px;
+            margin-top: 30px;
+            p{
+                margin-top: 5px;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
